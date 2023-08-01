@@ -4,11 +4,11 @@ const API = 'https://rickandmortyapi.com/api'
 const fetchData = (urlAPI, callback) => {
   const xhttp = new XMLHttpRequest()
 
-  xhttp.addEventListener("load", () => {
+  xhttp.addEventListener('load', () => {
     callback(null, JSON.parse(xhttp.responseText)) 
   })
 
-  xhttp.addEventListener("error", () => {
+  xhttp.addEventListener('error', () => {
     const error = new Error('Error: ' + urlAPI)
     callback(error, null)
   })
