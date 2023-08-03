@@ -6,12 +6,14 @@
   "scripts": {
     "start:xmlhttprequest": "node src/0-callbacks/XMLHTTPRequest.js",
     "start:promises": "node src/1-promises/promises.js",
+    "start:fetch": "node src/1-promises/node-fetch.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "xmlhttprequest": "^1.8.0"
   }
 }
