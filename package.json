@@ -7,6 +7,7 @@
     "start:xmlhttprequest": "node src/0-callbacks/XMLHTTPRequest.js",
     "start:promises": "node src/1-promises/promises.js",
     "start:fetch": "node src/1-promises/node-fetch.mjs",
+    "start:async-await": "node src/2-async-await/async-await.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
