@@ -9,10 +9,13 @@ const fetchData = async urlAPI => {
 }
 
 const getCharacterInfo = async () => {
-  const data = await fetchData(`${API}/character/1`)
+  try {
+    const data = await fetchData(`${API}/character/1`)
 
-  console.log(`Ya se encuentran cargados los datos de: ${data.name}`)
-}
+    console.log(`Ya se encuentran cargados los datos de: ${data.name}`)
+  } catch (error) {
+    console.log(error)
+  }
 
 getCharacterInfo()
 console.log('Bienvenido al programa')
