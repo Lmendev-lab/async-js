@@ -3,7 +3,7 @@ const delay = (time, message) =>
   new Promise((resolve, reject) => {
     if (time < 0) reject("Time cannot be negative")
 
-    window.setTimeout(() => {
+    setTimeout(() => {
       resolve(message)
     }, time)
   })
