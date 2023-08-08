@@ -16,6 +16,7 @@ const getCharacterInfo = async () => {
   } catch (error) {
     console.log(error)
   }
+}
 
 getCharacterInfo()
 console.log('Bienvenido al programa')
